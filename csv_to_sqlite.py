@@ -4,6 +4,7 @@
 # open the database
 # write the csv data to sqlite
 # close the data base
+# for dbase processing remember that headers with spaces is unwelcome!
 
 import  sqlite3
 import csv
@@ -42,4 +43,3 @@ with open(fname) as csv_file:
         VALUES(?,?,?,?,?)''',(Word,third_singular,Present_Participle,Simple_Past,Past_Participle))
         conn.commit()
 
-        
